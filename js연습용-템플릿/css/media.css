@@ -1,0 +1,28 @@
+/* header 부분 */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  header ul {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    display: block;
+    right: -30px;
+    top: 80px;
+    padding: 10px 15px;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  header ul.on {
+    transform: translateX(0);
+  }
+  header ul li:not(:first-child) {
+    margin-top: 10px;
+  }
+  header .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+}

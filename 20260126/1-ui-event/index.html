@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript UI Events</title>
+    <style>
+        body {
+            height: 1500px;
+        }
+
+        #resizeBox {
+            width: 100px;
+            height: 100px;
+            background: coral;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>JavaScript UI Events</h2>
+    <div id="resizeBox"></div>
+
+    <script>
+        // 스크롤 이벤트
+        window.addEventListener('scroll', function () {
+            console.log('Scrolling with JavaScript');
+        });
+
+        // 창 크기 조정 이벤트
+        window.addEventListener('resize', function () {
+            document.getElementById('resizeBox').style.width = window.innerWidth / 10 + 'px';
+        });
+
+        // 페이지 로드 이벤트
+        window.addEventListener('load', function () {
+            alert('Page fully loaded with JavaScript');
+        });
+    </script>
+
+</body>
+
+</html>
