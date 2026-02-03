@@ -1,11 +1,12 @@
+import Header from './components/Header'
 import './App.css'
-import main 
+
 
 function App() {
 
   return (
     <div>
-
+      <Header />
     </div>
   )
 }
